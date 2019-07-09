@@ -1,10 +1,10 @@
 package easy.trees.minTreeDepth;
 
-import easy.trees.isSameTree_recursion.NodeTree;
+import easy.trees.isSameTree_recursion.TreeNode;
 
 public class MinDepth {
 
-    public static int minDepth(NodeTree root) {
+    public static int minDepth(TreeNode root) {
         if (root == null) {
             return 0;
         }

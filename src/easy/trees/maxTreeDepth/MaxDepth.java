@@ -1,10 +1,10 @@
 package easy.trees.maxTreeDepth;
 
-import easy.trees.isSameTree_recursion.NodeTree;
+import easy.trees.isSameTree_recursion.TreeNode;
 
 public class MaxDepth {
 
-    public static int maxDepth(NodeTree root) {
+    public static int maxDepth(TreeNode root) {
         int count = 1;
         if (root == null) {
             return 0;

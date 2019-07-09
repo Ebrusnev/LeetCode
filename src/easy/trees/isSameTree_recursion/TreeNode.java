@@ -1,15 +1,15 @@
 package easy.trees.isSameTree_recursion;
 
-public class NodeTree {
+public class TreeNode {
 
-    private NodeTree left;
-    private NodeTree right;
+    private TreeNode left;
+    private TreeNode right;
     private int val;
-    public NodeTree(int val) {
+    public TreeNode(int val) {
         this.val = val;
     }
 
-    public static boolean isSameTree(NodeTree one, NodeTree two) {
+    public static boolean isSameTree(TreeNode one, TreeNode two) {
         if (one == null && two == null) {
             return true;
         }
@@ -19,19 +19,19 @@ public class NodeTree {
         return isSameTree(one.left, two.left) && isSameTree(one.right, two.right);
     }
 
-    public NodeTree getLeft() {
+    public TreeNode getLeft() {
         return left;
     }
 
-    public void setLeft(NodeTree left) {
+    public void setLeft(TreeNode left) {
         this.left = left;
     }
 
-    public NodeTree getRight() {
+    public TreeNode getRight() {
         return right;
     }
 
-    public void setRight(NodeTree right) {
+    public void setRight(TreeNode right) {
         this.right = right;
     }
 
