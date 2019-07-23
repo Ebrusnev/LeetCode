@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PascalsTriangle_I_and_II {
-    public static List<List<Integer>> getPascalsTriangle(int rowsNum) {
+    private static List<List<Integer>> getPascalsTriangle(int rowsNum) {
         List<List<Integer>> result = new ArrayList<>();
         if (rowsNum == 0) {
             return result;
@@ -25,7 +25,7 @@ public class PascalsTriangle_I_and_II {
         return result;
     }
 
-    public static List<Integer> getRow(int rowIndex) {
+    private static List<Integer> getRow(int rowIndex) {
         List<Integer> row = new ArrayList<>();
         for (int i = 1; i <= rowIndex; i++) {
             List<Integer> l = new ArrayList<>();

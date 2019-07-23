@@ -1,8 +1,8 @@
 package easy.maxProfit;
 
-public class MaxProfit1 {
+public class BestTimeToBuyAndSellStocks1 {
 
-    public static int maxProfit(int[] prices) {
+    private static int maxProfit(int[] prices) {
         if (prices.length <= 1) {
             return 0;
         }
